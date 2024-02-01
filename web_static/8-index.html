@@ -1,129 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>AirBnB clone</title>
 
-		<link rel="shortcut icon" href="images/icon.ico" >
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/3-footer.css">
+	<link rel="stylesheet" href="styles/3-header.css">
+	<link rel="stylesheet" href="styles/4-common.css">
+	<link rel="stylesheet" href="styles/6-filters.css">
+	<link rel="stylesheet" href="styles/8-places.css">
+	<link rel="shortcut icon" href="/web_static/images/icon.png" type="image/x-icon">
+	<title>AirBnB Clone</title>
+</head>
 
-		<link rel="stylesheet" href="styles/4-common.css"/>
-		<link rel="stylesheet" href="styles/3-header.css"/>
-		<link rel="stylesheet" href="styles/3-footer.css"/>
-		<link rel="stylesheet" href="styles/6-filters.css"/>
-		<link rel="stylesheet" href="styles/8-places.css"/>
-	</head>
-    <body>
-		<header>
-			<div id="header_logo"></div>
-		</header>
-		<div class="container">
-			<section class="filters">
-				<button>Search</button>
-				<div class="locations">
-					<h3>States</h3>
-					<h4>California, Arizona...</h4>
-					<ul class="popover">
-						<li><h2>Arizona</h2>
-							<ul>
-								<li><h4>Page</h4></li>
-								<li><h4>Page2</h4></li>
-							</ul></li>
-						<li><h2>California</h2>
-							<ul>
-								<li><h4>San Francisco</h4></li>
-								<li><h4>Los Altos</h4></li>
-							</ul></li>
-					</ul>
-				</div>
-				<div class="amenities">
-					<h3>Amenities</h3>
-					<h4>Internet, Kitchen...</h4>
-					<ul class="popover">
-						<li><h4>Internet</h4></li>
-						<li><h4>TV</h4></li>
-						<li><h4>Kitchen</h4></li>
-						<li><h4>Iron</h4></li>
-					</ul>
-				</div>
+<body>
+	<header></header>
 
-			</section>
-			<section class="places">
-				<h1>Places</h1>
+	<div class="container">
+		<section class="filters">
+			<div class="locations">
+				<h3>States</h3>
+				<h4>Hogsmeade, Diagon Alley</h4>
+				<ul class="popover">
+					<li>
+						<h2>Hogsmeade</h2>
+						<ul>
+							<li>The Shreiking Shack</li>
+							<li>The Hog's Head</li>
+						</ul>
+					</li>
+					<li>
+						<h2>Diagon Alley:</h2>
+						<ul>
+							<li>Gambol and Japes</li>
+							<li>Flourish and Blotts</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="amenities">
+				<h3>Amenities</h3>
+				<h4>Enchanted Bedrooms, Wiz-fi</h4>
+				<ul class="popover">
+					<li>Wiz-fi</li>
+					<li>Enchanted baths</li>
+					<li>Troll wrestling</li>
+				</ul>
+			</div>
+			<button>Search</button>
+		</section>
+		<section class="places">
+			<h1>places</h1>
+			<div class="places-container">
 				<article>
-					<div class="headline">
-						<h2>My home</h2>
-						<div class="price_by_night">$80</div>
+					<div>
+						<h2>Hogsmeade Condominium</h2>
+						<div class="price_by_night">$45</div>
 					</div>
 					<div class="information">
-						<div class="max_guest">
-							<div class="guest_icon"></div>
-							<p>2 Guests</p>
-						</div>
-						<div class="number_rooms">
-							<div class="bed_icon"></div>
-							<p>1 Bedroom</p>
-						</div>
-						 <div class="number_bathrooms">
-							<div class="bath_icon"></div>
-							<p>1 Bathroom</p>
-						</div>
+						<div class="max_guest">2 Guests</div>
+						<div class="number_rooms">1 Bedroom</div>
+						<div class="number_bathrooms">1 Bathroom</div>
 					</div>
-					<div class="user"><b>Owner</b>: John Lennon</div>
+					<div class="user">
+						<b>Owner:</b> Harry Potter
+					</div>
 					<div class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </div>
+						Hogsmeade is a charming wizarding village with cozy accommodations. Enjoy the magic of this
+						place, where butterbeer flows and Honeydukes sweets abound.
+					</div>
 				</article>
 				<article>
-					<div class="headline">
-						<h2>Tiny house</h2>
-						<div class="price_by_night">$65</div>
+					<div>
+						<h2>Diagon Alley Suite</h2>
+						<div class="price_by_night">$30</div>
 					</div>
 					<div class="information">
-                        <div class="max_guest">
-                            <div class="guest_icon"></div>
-                            <p>4 Guests</p>
-                        </div>
-                        <div class="number_rooms">
-                            <div class="bed_icon"></div>
-                            <p>2 Bedroom</p>
-                        </div>
-                         <div class="number_bathrooms">
-                            <div class="bath_icon"></div>
-                            <p>1 Bathroom</p>
-                        </div>
-                    </div>
-					<div class="user"><b>Owner</b>: Adrienne</div>
+						<div class="max_guest">2 Guests</div>
+						<div class="number_rooms">1 Bedroom</div>
+						<div class="number_bathrooms">1 Bathroom</div>
+					</div>
+					<div class="user">
+						<b>Owner:</b> Hermione Granger
+					</div>
 					<div class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
+						Immerse yourself in the magic of Diagon Alley with this enchanting suite. Perfect for wizards
+						and witches seeking a comfortable stay amidst the wonders of the wizarding world.
+					</div>
 				</article>
 				<article>
-					<div class="headline">
-						<h2>A suite</h2>
-						<div class="price_by_night">$180</div>
+					<div>
+						<h2>The Burrow Retreat</h2>
+						<div class="price_by_night">$60</div>
 					</div>
 					<div class="information">
-                        <div class="max_guest">
-                            <div class="guest_icon"></div>
-                            <p>5 Guests</p>
-                        </div>
-                        <div class="number_rooms">
-                            <div class="bed_icon"></div>
-                            <p>3 Bedroom</p>
-                        </div>
-                         <div class="number_bathrooms">
-                            <div class="bath_icon"></div>
-                            <p>2 Bathroom</p>
-                        </div>
-                    </div>
-					<div class="user"><b>Owner</b>: Betty Holberton</div>
+						<div class="max_guest">2 Guests</div>
+						<div class="number_rooms">1 Bedroom</div>
+						<div class="number_bathrooms">1 Bathroom</div>
+					</div>
+					<div class="user">
+						<b>Owner:</b> Ron Weasley
+					</div>
 					<div class="description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Experience the warmth and charm of The Burrow with this delightful retreat. Surrounded by
+						magical gardens and the love of the Weasley family, it's a home away from home.
 					</div>
 				</article>
-			</section>
-		</div>
-		<footer>
-			<p>Holberton School</p>
-		</footer>
-	</body>
+			</div>
+
+
+		</section>
+	</div>
+
+	<footer>Best School</footer>
+</body>
+
 </html>
