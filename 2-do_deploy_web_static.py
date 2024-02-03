@@ -50,4 +50,3 @@ def do_deploy(archive_path):
         return True
 
     return False
-g
