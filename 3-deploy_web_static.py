@@ -80,7 +80,8 @@ def deploy():
     Returns:
         True on success, False otherwise
     """
-    path = do_pack()
-    if not path:
+    try:
+        path = do_pack()
+        do_deploy(path)
+    except:
         return False
-    return do_deploy(path)
