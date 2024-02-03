@@ -7,6 +7,8 @@ import os.path
 from fabric.api import env, put, run, local
 from datetime import datetime
 
+env.hosts = ["54.173.41.135", "18.208.120.167"]
+
 
 def do_pack():
     """Function to compress files"""
