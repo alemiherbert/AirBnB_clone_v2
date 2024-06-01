@@ -30,7 +30,7 @@ def c_text(text):
     """
     This is yet another route, but with special text handling
     """
-    return text.replace('_', ' ')
+    return "C " + text.replace('_', ' ')
 
 
 if __name__ == "__main__":
