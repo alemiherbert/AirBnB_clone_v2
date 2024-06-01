@@ -1,37 +1,28 @@
 #!/usr/bin/python3
 """
-This is the hello route module
-Written by: Alemi Herbert 2024
+starts a Flask web application
 """
-
 
 from flask import Flask
 app = Flask(__name__)
 
 
-@app.route("/", strict_slashes=False)
-def hello_world():
-    """
-    This is the main route of the application
-    """
-    return "Hello HBNB!"
+@app.route('/', strict_slashes=False)
+def index():
+    """returns Hello HBNB!"""
+    return 'Hello HBNB!'
 
 
-@app.route("/hbnb", strict_slashes=False)
+@app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """
-    This is yet another route
-    """
-    return "HBNB"
+    """returns HBNB"""
+    return 'HBNB'
 
 
-@app.route("/c/<text>", strict_slashes=False)
-def c_text(text):
-    """
-    This is yet another route, but with special text handling
-    """
-    return "C " + text.replace('_', ' ')
+@app.route('/c/<text>', strict_slashes=False)
+def cisfun(text):
+    """display “C ” followed by the value of the text variable"""
+    return 'C ' + text.replace('_', ' ')
 
-
-if __name__ == "__main__":
-    app.run(port=5000, host="0.0.0.0")
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000')

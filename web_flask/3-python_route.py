@@ -1,54 +1,35 @@
 #!/usr/bin/python3
 """
-This is the hello route module
-Written by: Alemi Herbert 2024
+starts a Flask web application
 """
-
 
 from flask import Flask
 app = Flask(__name__)
 
 
-@app.route("/", strict_slashes=False)
-def hello_world():
-    """
-    This is the main route of the application
-    """
-    return "Hello HBNB!"
+@app.route('/', strict_slashes=False)
+def index():
+    """returns Hello HBNB!"""
+    return 'Hello HBNB!'
 
 
-@app.route("/hbnb", strict_slashes=False)
+@app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """
-    This is yet another route
-    """
-    return "HBNB"
+    """returns HBNB"""
+    return 'HBNB'
 
 
-@app.route("/c/<text>", strict_slashes=False)
-def c_text(text):
-    """
-    This is yet another route, but with special text handling
-    """
-    return "C " + text.replace('_', ' ')
+@app.route('/c/<text>', strict_slashes=False)
+def cisfun(text):
+    """display “C ” followed by the value of the text variable"""
+    return 'C ' + text.replace('_', ' ')
 
 
-@app.route("/python/")
-def python_text():
-    """
-    Just in case there is nothing.
-    """
-    return "Python is cool"
+@app.route('/python', strict_slashes=False)
+@app.route('/python/<text>', strict_slashes=False)
+def pythoniscool(text='is cool'):
+    """display “Python ”, followed by the value of the text variable"""
+    return 'Python ' + text.replace('_', ' ')
 
-
-@app.route("/python/<text>", strict_slashes=False)
-def python_text2(text):
-    """
-    This is yet another route, but with special text handling, for python
-    """
-
-    return "Python " + text.replace('_', ' ')
-
-
-if __name__ == "__main__":
-    app.run(port=5000, host="0.0.0.0")
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000')
