@@ -65,7 +65,7 @@ def number_template(n):
     This is yet another route, but for numbers, and returns a template
     """
 
-    return render_template("5-number.html")
+    return render_template("5-number.html", n=n)
 
 
 if __name__ == "__main__":
